@@ -1,0 +1,35 @@
+<!--
+==========================================
+  Title: composer-app
+  Author: Professor Krasso
+  Modifier: Sarah Jean Baptiste
+  Date: 08/9/2021
+  Description: composer-app
+==========================================
+-->
+
+<!-- Main container for content.-->
+<div class="container">
+  <br/>
+
+  <!-- Heading to display assignment component-->
+  <h3>Composer List</h3>
+  <br/>
+
+  <table class="table">
+    <thead class="alert alert-secondary">
+      <tr>
+        <th scope="col">Full Name</th>
+        <th scope="col">Genre</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let composer of composers">
+      <tr>
+        <td> {{ composer.fullName }} </td>
+        <td> {{ composer.genre }} </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>
