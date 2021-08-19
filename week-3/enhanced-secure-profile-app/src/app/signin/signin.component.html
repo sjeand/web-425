@@ -1,0 +1,39 @@
+<!--
+==========================================
+  Title: Sign in
+  Author: Professor Krasso
+  Modifier: Sarah Jean Baptiste
+  Date: 08/19/2021
+  Description: sign in page
+==========================================
+-->
+
+<!-- Div to hold sign in card-->
+<div class='card signin-container'>
+  <div class='card-body'>
+    <h3 class='card-title'>Sign in</h3>
+
+    <form class='card-text'>
+
+      <!-- Div to hold username form-->
+      <div class='form-group'>
+        <label for='txtUserName'>Username</label>
+        <input type='text' class='form-control' id='txtUserName' placeholder='Enter your username'/>
+      </div>
+
+      <!-- Div to hold password form-->
+      <div class='form-group'>
+        <label for='txtPassword'>Password</label>
+        <input type='text' class='form-control' id='txtPassword' placeholder='Enter your password'/>
+      </div>
+
+      <!-- Submit button-->
+      <br/>
+      <div class='form-group'>
+        <button class='btn btn-primary float-end' (click)='signin()'>Submit</button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
