@@ -1,0 +1,23 @@
+<!--
+==========================================
+  Title: enhanced composer app
+  Author: Professor Krasso
+  Modifier: Sarah Jean Baptiste
+  Date: 08/19/2021
+  Description: enhanced-composer-app
+==========================================
+-->
+
+<!-- Div to hold list for composer information.-->
+<div class="row">
+  <div class="col-sm-12">
+    <ul class="list-group">
+      <li class="list-group-item">Composer ID: {{ composer.composerId }}</li>
+      <li class="list-group-item">Full name: {{ composer.fullName}}</li>
+      <li class="list-group-item">Genre: {{ composer.genre }}</li>
+    </ul>
+    <br />
+  <!-- Return to list of all composers.-->
+    <a routerLink="/composer-list" class="float-right">Return to Composers</a>
+  </div>
+</div>
