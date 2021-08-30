@@ -1,5 +1,18 @@
+/*
+==========================================
+  Title: composer app
+  Author: Professor Krasso
+  Modifier: Sarah Jean Baptiste
+  Date: 08/29/2021
+  Description: composer service
+==========================================
+*/
+
+//import statements
 import { Injectable } from '@angular/core';
 import { IComposer } from './composer.interface';
+import { map } from 'rxjs/operators';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -19,8 +32,8 @@ export class ComposerService {
   }
 
   //Function to get list of composers
-  getComposers() {
-    return this.composers;
+  getComposers(): Observable<IComposer[]> {
+    return of(this.composers)
   }
 
   // Function to get composer by ID
@@ -31,5 +44,9 @@ export class ComposerService {
       }
     }
     return {} as IComposer;
+  }
+  // function to get composer and filter results based on user entry
+  filterComposers(name: string): Observable<IComposer[]> {
+    return of(this.composers).pipe(map(composers => composers.filter(composer => composer.fullName.toLowerCase().indexOf(name) > -1)))
   }
 }
