@@ -1,0 +1,56 @@
+/*
+==========================================
+  Title: in-n-out book
+  Author: Professor Krasso
+  Modifier: Sarah Jean Baptiste
+  Date: 09/08/2021
+  Description: part four
+==========================================
+*/
+
+// import statement for theme SCSS
+@import './theme';
+
+// html styling
+html {
+  height: 100%;
+}
+
+// body styling
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+// color styling
+.blue {
+  color: #2196f3;
+}
+
+.green {
+  color: #66bb6a;
+}
+
+// attribution link styling
+.attribution-link {
+  text-decoration: none;
+  color: white;
+}
+
+.attribution-link:hover {
+  text-decoration: underline;
+}
+
+// card styling
+
+.card-title-icon {
+  text-align: center;
+}
+
+.card-title-icon, .mat-icon {
+  font-size: 72px;
+}
+
+.align-center {
+  text-align: center;
+}
