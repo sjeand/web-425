@@ -1,3 +1,14 @@
+/*
+==========================================
+  Title: gpa-calculator-app
+  Author: Professor Krasso
+  Modifier: Sarah Jean Baptiste
+  Date: 09/18/2021
+  Description: gpa calculator app
+==========================================
+*/
+
+//import statements
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';

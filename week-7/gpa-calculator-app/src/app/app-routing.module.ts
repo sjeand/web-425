@@ -1,9 +1,9 @@
 /*
 ==========================================
-  Title: gpa-calculator-app1
+  Title: gpa-calculator-app
   Author: Professor Krasso
   Modifier: Sarah Jean Baptiste
-  Date: 09/08/2021
+  Date: 09/18/2021
   Description: gpa calculator app
 ==========================================
 */

@@ -1,12 +1,24 @@
+<!--
+==========================================
+  Title: gpa-calculator-app
+  Author: Professor Krasso
+  Modifier: Sarah Jean Baptiste
+  Date: 09/18/2021
+  Description: gpa calculator app
+==========================================
+-->
+
+<!-- Div to hold all content-->
 <div fxLayout='column'>
   <div fxFlex>
 
+    <!-- Card to hold sign in information-->
     <mat-card class='mat-elevation-z8 signin-container'>
       <mat-card-title>Student Sign In</mat-card-title>
       <mat-card-subtitle>You must enter a valid student ID to proceed.</mat-card-subtitle>
 
       <mat-card-content>
-        <div class='msg-error' *ngIf='errorMessage'>
+        <div class='msg-error' *ngIf='errorMessage'> <!-- Error message for invalid ID-->
           {{ errorMessage }}
         </div>
 
