@@ -1,0 +1,43 @@
+<!--
+==========================================
+  Title: Bobs Computer Repair Shop
+  Author: Sarah Jean Baptiste
+  Date: 10/03/2021
+  Description:Bobs Computer Repair Shop
+==========================================
+-->
+
+<!--navigation bar-->
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+    <div style="width: 100%">
+      <div fxLayout="row wrap" fxLayoutAlign="end start">
+        <button mat-button routerLink="/home">Home</button>
+        <button mat-button routerLink="/contact">Contact Us</button>
+        <button mat-button routerLink="/about">About Us</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br/>
+
+<!--main content with title-->
+<div fxLayout="row wrap">
+  <div fxFlex>
+    <mat-card style="width: 100%">
+      <mat-card-title class="title">{{ title }}</mat-card-title>
+
+        <mat-card class="main-container">
+
+          <br/>
+
+          <mat-card-content>
+            <router-outlet></router-outlet>
+          </mat-card-content>
+
+        </mat-card>
+    </mat-card>
+  </div>
+</div>
+

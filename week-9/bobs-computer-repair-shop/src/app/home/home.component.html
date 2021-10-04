@@ -1,0 +1,36 @@
+<div class='main-container'>
+  <img class="hero-image" src="./assets/repairman.jpg"/>
+  <hr>
+  <h2>Services</h2>
+    <mat-selection-list color="primary" #selectedServices>
+      <mat-list-option checkboxPosition="before" *ngFor="let service of services" [value]="service">
+        {{ service.name }}
+      </mat-list-option>
+    </mat-selection-list>
+
+  <br/>
+  <hr>
+
+  <h2>Standard Fees</h2>
+  <div class="fees">
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Parts: </mat-label>
+        <input matInput [(ngModel)]="partsAmount" >
+        <mat-hint>Enter Value...</mat-hint>
+      </mat-form-field>
+    </p>
+  <br/>
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Labor: </mat-label>
+        <input matInput [(ngModel)]="laborHours" >
+        <mat-hint>Hours of Labor at $50.00</mat-hint>
+      </mat-form-field>
+    </p>
+
+  <br/>
+    <button mat-raised-button color="primary" (click)="openDialog()">Calculate</button>
+
+  </div>
+</div>
